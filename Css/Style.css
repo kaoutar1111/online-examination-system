@@ -1,0 +1,229 @@
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 420px;
+  width: 100%;
+  animation: slide-in 0.6s ease-out;
+}
+
+@keyframes slide-in {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+input,
+select {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  box-shadow: inset 0 0 5px #ccc;
+  font-size: 1rem;
+  transition: box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: inset 0 0 8px #00bcd4;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #0092ca, #005cb2);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #ffffff;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  animation: title-glow 2s infinite alternate ease-in-out;
+}
+
+@keyframes title-glow {
+  from {
+    text-shadow: 0 0 8px #38ef7d, 0 0 15px #11998e;
+  }
+  to {
+    text-shadow: 0 0 12px #38ef7d, 0 0 25px #11998e;
+  }
+}
+
+.form-links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form-links a {
+  display: block;
+  margin: 5px 0;
+  color: #00e1ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.form-links a:hover {
+  color: #00bcd4;
+}
+
+.form-box1 {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  margin-top: 20px;
+  overflow-x: auto;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(16px);
+}
+
+.form-box1 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.form-box1 thead {
+  background: linear-gradient(to right, #42a5f5, #478ed1);
+  color: white;
+  font-weight: bold;
+}
+
+.form-box1 th,
+.form-box1 td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.form-box1 tbody tr:hover {
+  background-color: rgba(227, 242, 253, 0.7);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-box1 td a {
+  color: #ff3ae5;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.form-box1 td a:hover {
+  text-decoration: underline;
+  color: #cb007d;
+}
+
+.register-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: white;
+  background: #42a5f5;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  background: #1976d2;
+}
+
+.tab-btn {
+  margin: 5px;
+  padding: 10px 15px;
+  background: #00acc1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: #007c91;
+}
+
+.form-section {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.form-section.active {
+  display: block;
+}
+
+.body1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #070707;
+}
+
+.card2P, .ConrolaC {
+  background: rgba(255, 255, 255, 0.25);
+  display: inline-block;
+  width: 30%;
+  height: 250px;
+  margin-right: 3%;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(16px);
+  transition: transform 0.3s ease;
+}
+
+.card2P:hover, .ConrolaC:hover {
+  transform: translateY(-5px);
+}
+
+.services {
+  display: inline-block;
+  margin-top: 5%;
+}
