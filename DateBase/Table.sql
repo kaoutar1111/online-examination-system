@@ -11,7 +11,7 @@ CREATE TABLE user (
 
 -- SAMPLE USER
 INSERT INTO user (name, email, password, role)
-VALUES ('Kaoutar Ait Benali', 'kaoutaraitbenali@gmail.com', '123', 'admin');
+VALUES ('Demo Admin', 'admin@example.com', '123', 'admin');
 
 -- EXAMS TABLE
 CREATE TABLE exams (
