@@ -50,11 +50,13 @@ A client-server design that follows the MVC idea:
 
 | Table | Content |
 | --- | --- |
-| `users` | Login details and role |
-| `exams` | Exam information |
-| `questions` | Questions for each exam |
-| `student_exam` | Which student took which exam, and the score |
-| `answers` | Each answer a student gave |
+| `user` | Name, email, hashed password, role (admin, teacher, student) and a recovery code |
+| `exams` | Title, subject, creator, start and end dates, and publication date |
+| `questions` | Question text, correct answer and points, linked to an exam |
+| `answers` | The answer each student gave to each question |
+| `results` | The mark each student got in each exam |
+| `manual_grading` | Marks given by teachers to short answers |
+| `cheating_attempts` | Records of suspicious behaviour per student, with a reason and a count |
 
 The structure is in `DateBase/Table.sql`.
 
